@@ -10,7 +10,7 @@ describe("Counter", () => {
     expect(screen.getByText("Count: 0")).toBeInTheDocument();
 
     const button = screen.getByRole("button", {
-      name: "Increment",
+      name: "Increment counter",
     });
 
     await button.click();

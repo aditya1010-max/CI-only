@@ -7,7 +7,11 @@ export function Counter() {
     <div>
       <p>Count: {count}</p>
 
-      <button type="button" onClick={() => setCount(count + 1)}>
+      <button
+        type="button"
+        aria-label="Increment counter"
+        onClick={() => setCount(count + 1)}
+      >
         Increment
       </button>
     </div>

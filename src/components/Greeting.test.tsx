@@ -7,8 +7,6 @@ describe("Greeting", () => {
   it("renders the user's name", () => {
     render(<Greeting name="Adi" />);
 
-expect(screen.getByRole("heading")).toHaveTextContent(
-  "Hello, Adi",
-);
+    expect(screen.getByRole("heading")).toHaveTextContent("Hello, Adi");
   });
 });
